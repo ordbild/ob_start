@@ -6,6 +6,7 @@ function create_post_types () {
 			'singular_name' => 'sample_name'
 		),
 		'public' => true,
+    'menu_icon' => '',
 		'supports' => array('title', 'editor', 'thumbnail')
 	));*/
 }
