@@ -7,6 +7,7 @@
  * 3. Images
  * 4. Filters
  * 5. Actions
+ * 6. Menus
  */
 require 'includes/custom-post-types.php';
 
@@ -18,3 +19,5 @@ require 'includes/images/custom-image-sizes.php';
 require 'includes/filters.php';
 
 require 'includes/actions.php';
+
+require 'includes/menus.php';
