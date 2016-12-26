@@ -8,6 +8,7 @@
  * 4. Filters
  * 5. Actions
  * 6. Menus
+ * 7. Helpers
  */
 require 'includes/custom-post-types.php';
 
@@ -21,3 +22,5 @@ require 'includes/filters.php';
 require 'includes/actions.php';
 
 require 'includes/menus.php';
+
+require 'includes/helpers.php';
