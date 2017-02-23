@@ -19,3 +19,11 @@ function ob_start_setup() {
 	add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'ob_start_setup' );
+
+/**
+ * Tar bort sidan Comments från menyn i backend
+ */
+function remove_comments_from_menu() {
+    remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'remove_comments_from_menu' );
