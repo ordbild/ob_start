@@ -24,7 +24,7 @@
 
 	<?php else : ?>
 
-		<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'ob_start' ); ?></p>
+		<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'obstart' ); ?></p>
 		<?php get_search_form(); ?>
 
 	<?php endif; ?>
