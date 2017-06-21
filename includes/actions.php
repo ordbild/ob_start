@@ -17,6 +17,13 @@ function ob_start_setup() {
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
+	
+	/*
+	 * Make theme available for translation.
+	 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyseventeen
+	 */
+	load_theme_textdomain( 'obspace' );
+	
 }
 add_action( 'after_setup_theme', 'ob_start_setup' );
 
