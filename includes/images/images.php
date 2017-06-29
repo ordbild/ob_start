@@ -13,6 +13,7 @@ function remove_thumbnail_dimensions( $html ) {
 }
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
 add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 );
+add_filter( 'img_caption_shortcode', 'remove_thumbnail_dimensions', 11 );
 
 /**
  * Helper for getting the URL to a thumbnail
