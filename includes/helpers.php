@@ -7,6 +7,9 @@
 function asset( $path ) {
     return get_bloginfo( 'template_directory' ) . '/assets/' . $path;
 }
+function a() {
+    echo get_bloginfo( 'template_directory' ) . '/';
+}
 
 /**
  * Returnerar dela-länkar
