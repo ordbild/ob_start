@@ -6,12 +6,16 @@ function enqueue_scripts_and_styles () {
     $assetsDir = $themeDir . '/assets';
 
     // wp_enqueue_style( $handle, $src, $deps, $ver, $media );
+    wp_enqueue_style( 'normalize', $assetsDir.'/css/normalize.css', null, bust_cache('css/style.css'), null );
+    wp_enqueue_style( 'main', $assetsDir.'/css/main.css', null, bust_cache('css/style.css'), null );
+    wp_enqueue_style( 'obforms', $assetsDir.'/css/forms.css', null, bust_cache('css/style.css'), null );
     wp_enqueue_style( 'stylesheet', $assetsDir.'/css/style.css', null, bust_cache('css/style.css'), null );
 
     // wp_enqueue_scripts($handle, $src, $deps, $ver, $in_footer);
     wp_deregister_script( 'wp-embed' );
     wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-latest.min.js', null, null, true );
+    wp_enqueue_script( 'app', $assetsDir.'/js/app.js', null, null, true );
 }
 
 function bust_cache( $file_name ) {
