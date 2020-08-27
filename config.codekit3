@@ -298,6 +298,14 @@
 		"oAP": "/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/templates/nav/static-menu.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/nav/static-menu.php",
+		"oF": 0
 		}
 	},
 "hooks": [
